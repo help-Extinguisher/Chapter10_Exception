@@ -17,12 +17,12 @@ public class ExceptionCase {
 		
 		try {
 			System.out.println("첫번째 정수를 입력하세요");
-			int a = in.nextInt();
+			double a = in.nextInt();
 			
 			System.out.println("두번째 정수를 입력하세요");
-			int b = in.nextInt();
+			double b = in.nextInt();
 			
-			System.out.println("입력받은 숫자는" + a + "와 " + b + "이며");
+			System.out.println("입력받은 숫자는" + (int) a + "와 " + (int) b + "이며");
 			System.out.println("둘을 나눈 값은 " + (double) (a/b) + "입니다.");
 		} catch (ArithmeticException e) {
 			System.out.println("오류가 발생했습니다.");
