@@ -1,5 +1,6 @@
 package ch10_3_example;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 	
@@ -25,11 +26,13 @@ public class ExceptionCase {
 			System.out.println("입력받은 숫자는" + (int) a + "와 " + (int) b + "이며");
 			System.out.println("둘을 나눈 값은 " + (double) (a/b) + "입니다.");
 		} catch (ArithmeticException e) {
-			System.out.println("오류가 발생했습니다.");
+			System.out.println("오류 : 값은 0으로 나눌수 없습니다");
+		} catch (InputMismatchException e) {
+			System.out.println("오류 : 값에는 문자열이 올 수 없습니다");
+
+		
+		
 		}
-		
-		
-		
 		
 	}
 
